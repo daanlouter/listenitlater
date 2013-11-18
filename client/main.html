@@ -1,15 +1,11 @@
 <head> 
-	<title>Microscope</title>
+	<title>Listen it Later</title>
 </head> 
 <body>
 	<div class="container"> 
-		<header class="navbar">
-			<div class="navbar-inner">
-				<a class="brand" href="/">Microscope</a>
-			</div>
-		</header>
+		{{>header}}
 		<div id="main" class="row-fluid">
-			{{> soundsList}}
+			{{renderPage}}
 		</div>
 	</div> 
 </body>

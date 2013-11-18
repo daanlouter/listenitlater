@@ -1,3 +1,3 @@
-Meteor.publish('sounds', function() { 
-	return Sounds.find();
+Meteor.publish('sounds', function(currentUser) { 
+	return Sounds.find({'fromUser': currentUser});
 });

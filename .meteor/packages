@@ -4,6 +4,13 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-insecure
 preserve-inputs
 bootstrap
+
+page-js-ie-support
+HTML5-History-API
+router
+
+accounts-ui-bootstrap-dropdown
+accounts-password
+insecure
