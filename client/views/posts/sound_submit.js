@@ -5,9 +5,10 @@ Template.soundSubmit.events({
 			url: $(event.target).find('[name=url]').val(),
 			title: $(event.target).find('[name=title]').val(), 
 			message: $(event.target).find('[name=message]').val(),
-			fromUser: Meteor.user()._id
+
+			//fromUser: Meteor.user()._id
 		}
 		sound._id = Sounds.insert(sound);
-		// Meteor.Router.to('soundPage', sound); 
+		Meteor.Router.to('soundsList', sound); 
 	}
 });

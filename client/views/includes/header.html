@@ -5,7 +5,7 @@
 			<div class="navbar-inner">
 				<a class="brand" href="{{soundsListPath}}">Listen it later</a>
 				<ul class="nav">
-					<li><a href="{{soundSubmitPath}}">New</a></li> </ul>
+					{{#if currentUser}}<li><a href="{{soundSubmitPath}}">New</a></li>{{/if}} </ul>
 				<ul class="nav pull-right">
 				{{loginButtons align="right"}}
 				</ul>

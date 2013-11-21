@@ -1,8 +1,12 @@
-<template name="soundsList"> 
-{{>soundSubmit}}
+<template name="soundsList"> 	
+	{{#if currentUser}}
 	<div class="sounds">
 		{{#each sounds}} 
 			{{> soundItem}}
 		{{/each}}
 	</div> 
+	{{/if}}
+	{{#unless currentUser}}
+	Welcome to Listen it Later. Make an account to start adding tunes!
+	{{/unless}}
 </template>

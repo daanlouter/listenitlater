@@ -13,4 +13,5 @@ router
 
 accounts-ui-bootstrap-dropdown
 accounts-password
-insecure
+
+spin
